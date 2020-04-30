@@ -21,8 +21,6 @@ public class testing {
 	//	en.indexDirectory("res");
 		searchEngine.indexDirectory("res");
 //		searchEngine.deleteWebPage("res\\wiki_00");
-		List<ISearchResult> res = searchEngine.searchByWordWithRanking("   trOUbleshOoting    ");
-		System.out.println( res.size());
 		
 
 		
