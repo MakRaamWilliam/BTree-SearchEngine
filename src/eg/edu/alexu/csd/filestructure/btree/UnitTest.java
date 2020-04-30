@@ -26,6 +26,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
+import javax.management.RuntimeErrorException;
+
+import org.hamcrest.core.IsInstanceOf;
+import org.junit.Assert;
+import org.junit.Test;
+
+
 public class UnitTest {
 	private final boolean debug = false;
 
@@ -591,9 +598,9 @@ public class UnitTest {
 		}
 	}
 
-//	/**
-//	 * Test deletion complex case 1.
-//	 */
+	/**
+	 * Test deletion complex case 1.
+	 */
 	@SuppressWarnings("unchecked")
 	@Test
 	public void testDeletionComplex1() {
@@ -712,6 +719,7 @@ public class UnitTest {
 			TestRunner.fail("Fail to delete in tree", e);
 		}
 	}
+
   
 //
 //	/**

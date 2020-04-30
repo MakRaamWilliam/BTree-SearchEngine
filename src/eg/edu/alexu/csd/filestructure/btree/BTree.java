@@ -297,7 +297,7 @@ public class BTree <K extends Comparable<K>, V> implements IBTree<K, V>{
 		return i;
 	}
 
-	public void inorder(IBTreeNode<K, V> node) {
+	private void inorder(IBTreeNode<K, V> node) {
 		int i; 
 		for (i = 0; i < node.getNumOfKeys(); i++) 
 		{ 
@@ -311,21 +311,8 @@ public class BTree <K extends Comparable<K>, V> implements IBTree<K, V>{
 	  
 	}
 	
-//	private void traverseTreeInorder(IBTreeNode<Integer, String> node, List<Integer> keys, List<String> vals) {
-//		int i; 
-//		for (i = 0; i < node.getNumOfKeys(); i++) 
-//		{ 
-//
-//			if (!node.isLeaf()) 
-//				traverseTreeInorder(node.getChildren().get(i), keys, vals);
-//			keys.add(node.getKeys().get(i));
-//			vals.add(node.getValues().get(i));
-//		} 
-//		if (!node.isLeaf()) 
-//			traverseTreeInorder(node.getChildren().get(i), keys, vals);
-//	}
 	
-	 int getHeight (IBTreeNode<?, ?> node) {
+  private	 int getHeight (IBTreeNode<?, ?> node) {
 		if (node.isLeaf()) return 0;
 
 		return node.getNumOfKeys() > 0 ? 1 + getHeight(node.getChildren().get(0)) : 0;
