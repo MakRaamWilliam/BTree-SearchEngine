@@ -16,10 +16,10 @@ public class testing {
 	public static void main(String[] args)   {
 		
 		
-		ISearchEngine searchEngine = new SearchEngine(10);
+	//	ISearchEngine searchEngine = new SearchEngine(10);
 	//	en.indexWebPage("res\\wiki_00");
 	//	en.indexDirectory("res");
-		searchEngine.indexDirectory("res");
+ //		searchEngine.indexDirectory("res");
 //		searchEngine.deleteWebPage("res\\wiki_00");
 		
 
@@ -100,10 +100,7 @@ public class testing {
 //	System.out.println(	tree.search(16) );
     //    tree.inorder(tree.getRoot());
         
-		ArrayList<Integer> arr= new ArrayList<Integer>();
-		arr.add(2);arr.add(4);arr.add(6);
-		arr.add(2, 5);
-	//	System.out.println(arr.get(3));
+		
 	}
 
 }
