@@ -109,7 +109,7 @@ public class BTree <K extends Comparable<K>, V> implements IBTree<K, V>{
 	         childrens.add(node.getChildren().get(i));		  
 		this.val=node.getValues().get(node.getNumOfKeys()/2); ke=node.getKeys().get(node.getNumOfKeys()/2);
 		node.getKeys().remove(ke);  node.getValues().remove(val);
-//	System.out.println(val +" val");
+      //	System.out.println(val +" val");
 		newNode.setKeys(keys); newNode.setValues(values);
 		newNode.setChildren(childrens);
 		int len = node.getNumOfKeys()-newNode.getNumOfKeys();

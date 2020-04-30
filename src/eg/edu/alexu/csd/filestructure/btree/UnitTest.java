@@ -980,7 +980,7 @@ public class UnitTest {
 			searchEngine.indexWebPage("res\\subfolder\\wiki_02");
 			searchEngine.deleteWebPage("res\\wiki_01");
 			List<ISearchResult> expected = Arrays.asList(new SearchResult[]{new SearchResult("7697611", 1)});
-			List<ISearchResult> actual = searchEngine.searchByWordWithRanking("European");
+			List<ISearchResult> actual = searchEngine.searchByWordWithRanking("   EurOPeAn     ");
 			for (ISearchResult searchRes : actual) {
 				System.out.println(searchRes.toString());
 			}
